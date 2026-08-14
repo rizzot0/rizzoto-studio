@@ -25,8 +25,39 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "pipatzo",
+    slug: "compilador",
     number: "01",
+    title: "Compilador en línea",
+    eyebrow: "Editor · demo público",
+    summary:
+      "Editor en el navegador para escribir y ejecutar JavaScript, Python y C++ sin instalar nada. Demo vivo en GitHub Pages.",
+    problem:
+      "Quería un entorno de práctica que se pudiera abrir con un link. Un backend en Vercel no sirve para Python/C++: esa plataforma no trae esos compiladores, y el deploy anterior quedó en 404.",
+    approach: [
+      "Frontend Angular con Monaco Editor (la misma base de VS Code): archivos, temas, stdin y terminal.",
+      "JavaScript corre en un Web Worker del propio navegador, con timeout.",
+      "Python usa Pyodide (CPython compilado a WebAssembly); la primera ejecución descarga el runtime.",
+      "C++ se compila y ejecuta con Compiler Explorer (g++ 13), porque un intérprete JS se rompía al parsear.",
+      "Hosting estático en GitHub Pages: cero costo, sin servidor propio para el demo.",
+    ],
+    stack: [
+      "Angular",
+      "TypeScript",
+      "Monaco Editor",
+      "Pyodide",
+      "Compiler Explorer",
+      "GitHub Pages",
+    ],
+    links: [
+      { label: "Demo", href: "https://rizzot0.github.io/codeRunner/" },
+      { label: "GitHub", href: "https://github.com/rizzot0/codeRunner" },
+    ],
+    featured: true,
+    study: true,
+  },
+  {
+    slug: "pipatzo",
+    number: "02",
     title: "PIPATZO",
     eyebrow: "Mapas · grafos · trabajo en equipo",
     summary:
@@ -44,25 +75,6 @@ export const projects: Project[] = [
       { label: "Remake", href: "https://github.com/rizzot0/pipatzo-remake" },
       { label: "Repo del equipo", href: "https://github.com/Unflojo21/PIPATZO" },
     ],
-    featured: true,
-    study: true,
-  },
-  {
-    slug: "compilador",
-    number: "02",
-    title: "Compilador en línea",
-    eyebrow: "Herramienta · serverless",
-    summary:
-      "Editor en el navegador para escribir y ejecutar Python, C++ y JavaScript sin instalar nada en el equipo.",
-    problem:
-      "Quería un entorno de práctica accesible desde cualquier lado: pegar código, correrlo y ver la salida, con un costo de hosting cercano a cero.",
-    approach: [
-      "Frontend Angular con Monaco Editor (la misma base de VS Code) para una experiencia de edición real.",
-      "Backend serverless en Vercel: un endpoint que despacha runners por lenguaje.",
-      "Diseño stateless, pensado para el cupo gratuito y para compartir un demo con URL.",
-    ],
-    stack: ["Angular", "TypeScript", "Monaco Editor", "Node.js", "Vercel"],
-    links: [{ label: "GitHub", href: "https://github.com/rizzot0/codeRunner" }],
     study: true,
   },
   {
@@ -116,7 +128,7 @@ export const stack = {
   frontend: ["React", "Next.js", "Angular", "Tailwind CSS"],
   backend: ["Node.js", "FastAPI", "REST APIs"],
   data: ["PostgreSQL", "SQLite", "MongoDB"],
-  tools: ["Git", "Docker", "Vercel", "Netlify"],
+  tools: ["Git", "Docker", "GitHub Pages", "Vercel", "Netlify"],
 };
 
 export const letter = {
@@ -124,7 +136,7 @@ export const letter = {
   paragraphs: [
     "Soy Bastian, ingeniero de software en Coquimbo. Construyo aplicaciones web full-stack: interfaces claras, APIs y datos que se pueden mantener.",
     "Me muevo sobre todo en TypeScript, React y Next.js. Cuando el problema lo pide, también trabajo el backend en Node o Python. Me interesa el trabajo con dueño de producto: autenticación, mapas, editores, flujos reales — no solo una landing.",
-    "Este sitio es mi carta de presentación. El otro, más personal, sigue publicado si quieres ver cómo me expreso fuera del formato profesional.",
+    "Este sitio es mi carta de presentación. El compilador en línea tiene demo público en GitHub Pages; el otro sitio, más personal, sigue publicado si quieres ver cómo me expreso fuera de este formato.",
   ],
   signoff: "Un saludo,",
 };

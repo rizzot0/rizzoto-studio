@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci --registry https://registry.npmjs.org
+      - run: npm install --registry https://registry.npmjs.org
       - run: npm run build
         env:
           GITHUB_PAGES: "true"

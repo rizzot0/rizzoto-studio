@@ -61,16 +61,16 @@ export const projects: Project[] = [
     title: "Plan Vial",
     eyebrow: "Ruteo urbano · demo público",
     summary:
-      "Plan Vial calcula la mejor ruta sobre el grafo vial de una ciudad: cargas el mapa, marcas origen y destino, y Dijkstra arma el camino. Demo vivo en Render.",
+      "Plan Vial calcula la mejor ruta sobre el grafo vial de una ciudad: cargas el mapa, marcas origen y destino o buscas una dirección, y Dijkstra arma el camino. Con cuenta puedes guardar y compartir rutas. Demo vivo en Render.",
     problem:
       "Había datos territoriales reales (nodos, aristas, ciudades chilenas) y un prototipo de equipo, pero no una herramienta que se pudiera abrir con un link: elegir ciudad, ver el mapa y pedir una ruta sin pelear con la API a mano.",
     approach: [
-      "Producto público llamado Plan Vial: frontend React + Leaflet, clicks en el mapa y estados de carga/error claros.",
-      "Backend FastAPI que sirve ciudades, estadísticas, grafo y cálculo de ruta (Dijkstra) sobre SQLite.",
-      "Frontend y API en el mismo servicio, publicados en Render: https://planvial.onrender.com/",
-      "Migración por ciudad (XML → base local) y recorte del grafo en mapas grandes como Santiago para que el demo no se caiga.",
+      "Producto público llamado Plan Vial: landing, mapa usable sin cuenta, registro y rutas guardadas.",
+      "Backend FastAPI: Dijkstra sobre SQLite para el grafo, y Postgres para cuentas, JWT y links públicos.",
+      "Búsqueda de dirección (Nominatim) además del click en el mapa; geometría persistida para reabrir o compartir.",
+      "Frontend y API en el mismo servicio en Render: https://planvial.onrender.com/",
     ],
-    stack: ["React", "Leaflet", "FastAPI", "SQLite", "Python", "Render"],
+    stack: ["React", "Leaflet", "FastAPI", "SQLite", "PostgreSQL", "JWT", "Python", "Render"],
     links: [
       { label: "Demo", href: "https://planvial.onrender.com/" },
       { label: "GitHub", href: "https://github.com/rizzot0/pipatzo-remake" },
@@ -137,7 +137,7 @@ export const letter = {
   paragraphs: [
     "Soy Bastian, ingeniero de software en Coquimbo. Construyo aplicaciones web full-stack: interfaces claras, APIs y datos que se pueden mantener.",
     "Me muevo sobre todo en TypeScript, React y Next.js. Cuando el problema lo pide, también trabajo el backend en Node o Python. Me interesa el trabajo con dueño de producto: autenticación, mapas, editores, flujos reales — no solo una landing.",
-    "Este sitio es mi carta de presentación. El compilador en línea y Plan Vial tienen demo público; el otro sitio, más personal, sigue publicado si quieres ver cómo me expreso fuera de este formato.",
+    "Este sitio es mi carta de presentación. El compilador en línea y Plan Vial (mapa, cuentas y rutas compartidas) tienen demo público; el otro sitio, más personal, sigue publicado si quieres ver cómo me expreso fuera de este formato.",
   ],
   signoff: "Un saludo,",
 };

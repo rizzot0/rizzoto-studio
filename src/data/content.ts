@@ -56,9 +56,9 @@ export const projects: Project[] = [
     study: true,
   },
   {
-    slug: "ruta-urbana",
+    slug: "plan-vial",
     number: "02",
-    title: "Ruta Urbana",
+    title: "Plan Vial",
     eyebrow: "Mapas · grafos · Dijkstra",
     summary:
       "Visor de ciudades donde cargas un mapa, marcas origen y destino, y calculas la mejor ruta sobre el grafo vial.",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     ],
     stack: ["React", "Leaflet", "FastAPI", "SQLite", "Python"],
     links: [
-      { label: "Demo", href: "https://pipatzo-remake.onrender.com/" },
+      { label: "Demo", href: "https://planvial.onrender.com/" },
       { label: "Remake", href: "https://github.com/rizzot0/pipatzo-remake" },
       { label: "Repo del equipo", href: "https://github.com/Unflojo21/PIPATZO" },
     ],

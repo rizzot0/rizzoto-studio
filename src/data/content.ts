@@ -59,22 +59,22 @@ export const projects: Project[] = [
     slug: "plan-vial",
     number: "02",
     title: "Plan Vial",
-    eyebrow: "Mapas · grafos · Dijkstra",
+    eyebrow: "Ruteo urbano · demo público",
     summary:
-      "Visor de ciudades donde cargas un mapa, marcas origen y destino, y calculas la mejor ruta sobre el grafo vial.",
+      "Plan Vial calcula la mejor ruta sobre el grafo vial de una ciudad: cargas el mapa, marcas origen y destino, y Dijkstra arma el camino. Demo vivo en Render.",
     problem:
-      "Había que pasar de datos territoriales (nodos, aristas, ciudades) a una herramienta que se pudiera usar: elegir una ciudad, ver el mapa y pedir una ruta sin pelear con la API a mano.",
+      "Había datos territoriales reales (nodos, aristas, ciudades chilenas) y un prototipo de equipo, pero no una herramienta que se pudiera abrir con un link: elegir ciudad, ver el mapa y pedir una ruta sin pelear con la API a mano.",
     approach: [
-      "Frontend en React + Leaflet: selección de ciudad, clicks en el mapa y estados de carga/error claros.",
-      "Backend FastAPI que sirve ciudades, estadísticas, grafo y cálculo de ruta sobre SQLite.",
-      "Scripts de migración por ciudad (datos XML → base local) para no depender de un CSV suelto.",
-      "Trabajo en equipo sobre un repo compartido, con un remake propio para iterar la interfaz.",
+      "Producto público llamado Plan Vial: frontend React + Leaflet, clicks en el mapa y estados de carga/error claros.",
+      "Backend FastAPI que sirve ciudades, estadísticas, grafo y cálculo de ruta (Dijkstra) sobre SQLite.",
+      "Frontend y API en el mismo servicio, publicados en Render: https://planvial.onrender.com/",
+      "Migración por ciudad (XML → base local) y recorte del grafo en mapas grandes como Santiago para que el demo no se caiga.",
     ],
-    stack: ["React", "Leaflet", "FastAPI", "SQLite", "Python"],
+    stack: ["React", "Leaflet", "FastAPI", "SQLite", "Python", "Render"],
     links: [
       { label: "Demo", href: "https://planvial.onrender.com/" },
-      { label: "Remake", href: "https://github.com/rizzot0/pipatzo-remake" },
-      { label: "Repo del equipo", href: "https://github.com/Unflojo21/PIPATZO" },
+      { label: "GitHub", href: "https://github.com/rizzot0/pipatzo-remake" },
+      { label: "Repo original", href: "https://github.com/Unflojo21/PIPATZO" },
     ],
     study: true,
   },
@@ -129,7 +129,7 @@ export const stack = {
   frontend: ["React", "Next.js", "Angular", "Tailwind CSS"],
   backend: ["Node.js", "FastAPI", "REST APIs"],
   data: ["PostgreSQL", "SQLite", "MongoDB"],
-  tools: ["Git", "Docker", "GitHub Pages", "Vercel", "Netlify"],
+  tools: ["Git", "Docker", "GitHub Pages", "Render", "Vercel", "Netlify"],
 };
 
 export const letter = {
@@ -137,7 +137,7 @@ export const letter = {
   paragraphs: [
     "Soy Bastian, ingeniero de software en Coquimbo. Construyo aplicaciones web full-stack: interfaces claras, APIs y datos que se pueden mantener.",
     "Me muevo sobre todo en TypeScript, React y Next.js. Cuando el problema lo pide, también trabajo el backend en Node o Python. Me interesa el trabajo con dueño de producto: autenticación, mapas, editores, flujos reales — no solo una landing.",
-    "Este sitio es mi carta de presentación. El compilador en línea tiene demo público en GitHub Pages; el otro sitio, más personal, sigue publicado si quieres ver cómo me expreso fuera de este formato.",
+    "Este sitio es mi carta de presentación. El compilador en línea y Plan Vial tienen demo público; el otro sitio, más personal, sigue publicado si quieres ver cómo me expreso fuera de este formato.",
   ],
   signoff: "Un saludo,",
 };

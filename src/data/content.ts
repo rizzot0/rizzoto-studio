@@ -72,6 +72,7 @@ export const projects: Project[] = [
     ],
     stack: ["React", "Leaflet", "FastAPI", "SQLite", "Python"],
     links: [
+      { label: "Demo", href: "https://pipatzo-remake.onrender.com/" },
       { label: "Remake", href: "https://github.com/rizzot0/pipatzo-remake" },
       { label: "Repo del equipo", href: "https://github.com/Unflojo21/PIPATZO" },
     ],

@@ -56,10 +56,10 @@ export const projects: Project[] = [
     study: true,
   },
   {
-    slug: "pipatzo",
+    slug: "ruta-urbana",
     number: "02",
-    title: "PIPATZO",
-    eyebrow: "Mapas · grafos · trabajo en equipo",
+    title: "Ruta Urbana",
+    eyebrow: "Mapas · grafos · Dijkstra",
     summary:
       "Visor de ciudades donde cargas un mapa, marcas origen y destino, y calculas la mejor ruta sobre el grafo vial.",
     problem:

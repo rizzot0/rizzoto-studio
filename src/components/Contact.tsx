@@ -33,6 +33,14 @@ export function Contact() {
           >
             github.com/rizzot0
           </a>
+          <a
+            href={site.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted hover:text-ink"
+          >
+            linkedin.com/in/bastian-guerra
+          </a>
         </div>
       </div>
     </section>

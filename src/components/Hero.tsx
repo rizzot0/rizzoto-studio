@@ -29,11 +29,19 @@ export function Hero() {
           href="#trabajo"
           className="rounded-full bg-ink px-5 py-2.5 text-sm text-paper transition-opacity hover:opacity-80"
         >
-          Ver trabajo
+          Ver proyectos
+        </a>
+        <a
+          href={site.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full border border-line px-5 py-2.5 text-sm text-ink transition-colors hover:border-ink"
+        >
+          LinkedIn
         </a>
         <a
           href={`mailto:${site.email}`}
-          className="rounded-full border border-line px-5 py-2.5 text-sm text-ink transition-colors hover:border-ink"
+          className="rounded-full border border-line px-5 py-2.5 text-sm text-muted transition-colors hover:border-ink hover:text-ink"
         >
           Escribirme
         </a>

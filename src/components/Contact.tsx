@@ -39,7 +39,7 @@ export function Contact() {
             rel="noopener noreferrer"
             className="text-muted hover:text-ink"
           >
-            linkedin.com/in/bastian-guerra
+            linkedin.com/in/bastian-guerra-a3b394144
           </a>
         </div>
       </div>

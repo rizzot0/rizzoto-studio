@@ -5,7 +5,7 @@ export const site = {
   location: "Coquimbo, Chile",
   email: "bastianalonso92@gmail.com",
   github: "https://github.com/rizzot0",
-  linkedin: "https://www.linkedin.com/in/bastian-guerra/",
+  linkedin: "https://www.linkedin.com/in/bastian-guerra-a3b394144-a3b394144/",
   personalSite: "https://landing-page-rizzoto.netlify.app/",
   availability: "Disponible para trabajo y proyectos",
 };
@@ -153,16 +153,16 @@ export const projects: Project[] = [
 export const stack = {
   languages: ["TypeScript", "JavaScript", "Python", "Java", "C/C++ (fundamentos)"],
   frontend: ["React", "Next.js", "Angular", "Tailwind CSS", "Monaco Editor"],
-  backend: ["FastAPI", "Node.js", "Express", "RESTful APIs", "JWT Auth"],
-  data: ["PostgreSQL", "SQLite", "MongoDB"],
-  tools: ["Docker", "Docker Compose", "Git", "GitHub Actions", "Vercel", "Render", "Netlify"],
+  backend: ["FastAPI", "NestJS", "Node.js", "Express", "RESTful APIs", "JWT Auth"],
+  data: ["Google Cloud (BigQuery/Dataform)", "PostgreSQL", "SQLite", "MongoDB"],
+  tools: ["Docker", "Docker Compose", "Git", "GitLab CI/CD", "GitHub Actions", "GCP", "Vercel", "Render"],
 };
 
 export const letter = {
   greeting: "Hola —",
   paragraphs: [
     "Soy Bastian Guerra, Ingeniero en Tecnologías de la Información titulado de la Universidad Católica del Norte (UCN). Construyo aplicaciones web full-stack: arquitectura limpia, APIs robustas y modelado de datos con rigor ingenieril.",
-    "Mi stack principal se centra en TypeScript, React y Next.js en el frontend, y FastAPI, Node.js y PostgreSQL en el backend. Me apasiona resolver problemas técnicos no triviales: modelado de grafos viales, optimización algorítmica, WebAssembly y flujos de negocio completos.",
+    "He desarrollado soluciones para la industria aeronáutica en LATAM Airlines (Next.js, NestJS, GCP y BigQuery) y me muevo fluidamente en TypeScript, React, Next.js en el frontend, y FastAPI, Node.js y PostgreSQL en el backend.",
     "Este sitio es mi carta de presentación técnica. Tanto el motor de rutas Plan Vial (Dijkstra, mapas y PostgreSQL) como el compilador en línea (Angular y WebAssembly) cuentan con demos interactivos y código abierto documentado.",
   ],
   signoff: "Un saludo,",

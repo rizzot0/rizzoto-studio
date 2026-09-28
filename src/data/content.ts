@@ -51,8 +51,39 @@ export const projects: Project[] = [
     study: true,
   },
   {
-    slug: "compilador",
+    slug: "brayan-edita-videos",
     number: "02",
+    title: "Brayan Edita Videos",
+    eyebrow: "Cliente comercial · Producción Web & Conversión",
+    summary:
+      "Sitio web comercial y embudo de conversión para agencia de edición de video publicitario y Meta Ads. Construido con React 19, animaciones con Framer Motion, analítica con Google Tag Manager y despliegue con dominio personalizado .cl en producción.",
+    problem:
+      "El cliente requería una presencia digital profesional y de alta conversión para captar marcas y creadores de contenido para Meta Ads. Necesitaba reproductor VSL, catálogo de servicios, blog, casos de éxito, integración directa a WhatsApp y óptimo SEO técnico bajo un dominio chileno propio.",
+    approach: [
+      "Desarrollo frontend modular con React 19, Tailwind CSS y Vite para asegurar tiempos de carga casi instantáneos.",
+      "Arquitectura de embudo de ventas: sección de dolores, video sales letter (VSL), testimonios, planes y botón flotante de WhatsApp.",
+      "Enrutamiento multi-página con React Router DOM para blog, páginas de servicios detalladas y casos de estudio.",
+      "Micro-interacciones y animaciones fluidas con Framer Motion orientadas a resaltar la calidad audiovisual del cliente.",
+      "Configuración técnica de infraestructura: DNS en NIC Chile con dominio .cl, despliegue SSL en Vercel, analítica con Google Tag Manager y optimización SEO (Open Graph / Twitter Cards).",
+    ],
+    stack: [
+      "React 19",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vite",
+      "Google Tag Manager",
+      "Vercel",
+      "NIC Chile (.cl)",
+    ],
+    links: [
+      { label: "Sitio en vivo", href: "https://www.brayaneditavideos.cl/" },
+      { label: "GitHub", href: "https://github.com/rizzot0/landingpagebryan" },
+    ],
+    study: true,
+  },
+  {
+    slug: "compilador",
+    number: "03",
     title: "CodeRunner - Compilador en línea",
     eyebrow: "WebAssembly & Sandboxing · Demo público",
     summary:
@@ -83,7 +114,7 @@ export const projects: Project[] = [
   },
   {
     slug: "hoy-biblioteca",
-    number: "03",
+    number: "04",
     title: "Hoy — Spotify Hub",
     eyebrow: "Integración API & Automatización diaria",
     summary:
@@ -105,7 +136,7 @@ export const projects: Project[] = [
   },
   {
     slug: "english-app",
-    number: "04",
+    number: "05",
     title: "English Learning App",
     eyebrow: "Producto educativo interactivo",
     summary:
@@ -129,7 +160,7 @@ export const projects: Project[] = [
   },
   {
     slug: "rizzoflix",
-    number: "05",
+    number: "06",
     title: "RIZZOFLIX",
     eyebrow: "Arquitectura frontend & Autenticación",
     summary:
